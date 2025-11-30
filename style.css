@@ -19,8 +19,24 @@ body {
     margin-top: -10px;
 }
 
+.main-nav {
+    display: flex;
+    justify-content: flex-start;
+    padding: 0.5rem 1rem;
+    background: #0b3a53;
+    margin-left: -8px;
+    margin-right: -8px;
+}
+.main-nav a {color: #f4f7fb; text-decoration: none; font-weight: 600;}
+
 .stats-container {
     display: flex;
+    align-items: center;
+}
+
+.stats-container:hover {
+    cursor: pointer;
+    box-shadow: 0 0 30px lightblue;
 }
 
 .stats-card {
@@ -34,6 +50,32 @@ body {
 
 #num-contributions, #total-raised, #num-games {
     font-size: 50px;
+}
+
+#search-container {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+#game-search {
+    flex: 1;
+    padding: 0.65rem 0.75rem;
+    border: 1px solid #cdd6e0;
+    border-radius: 6px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+#search-btn {
+    padding: 0.65rem 1.1rem;
+    border: none;
+    background: #1f8cd6;
+    color: #fff;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
 }
 
 #games-container {
